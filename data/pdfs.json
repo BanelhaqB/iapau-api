@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "title": "Titre",
+        "pages": [
+            {"path": "routes1", "zoi": true},
+            {"path": "routes1", "zoi": true},
+            {"path": "routes1", "zoi": true}
+        ],
+        "stauts": "TRAITED"
+    }
+]
