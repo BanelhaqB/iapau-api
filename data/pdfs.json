@@ -1,12 +1,1 @@
-[
-    {
-        "id": 1,
-        "title": "Titre",
-        "pages": [
-            {"path": "routes1", "zoi": true},
-            {"path": "routes1", "zoi": true},
-            {"path": "routes1", "zoi": true}
-        ],
-        "stauts": "TRAITED"
-    }
-]
+[{"id":"SzKKXg1dEp","title":"PDF test True","pages":[{"path":"http://srv0.poneyhost.eu:8081/png/SzKKXg1dEp/SzKKXg1dEp.pdf_1.png","zoi":false}],"stauts":"PUBLISHED"},{"id":"8XHirSAnLA","title":"PDF test True","pages":[{"path":"http://srv0.poneyhost.eu:8081/png/8XHirSAnLA/8XHirSAnLA.pdf_1.png","zoi":false}],"stauts":"PUBLISHED"},{"id":"8XHirSAnLA","title":"PDF test True","pages":[{"path":"http://srv0.poneyhost.eu:8081/png/8XHirSAnLA/8XHirSAnLA.pdf_1.png","zoi":false}],"stauts":"PUBLISHED"}]

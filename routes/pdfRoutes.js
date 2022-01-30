@@ -3,8 +3,12 @@ const pdfController = require('./../controllers/pdfController');
 
 const router = express.Router();
 
+router.get('/', pdfController.getAll);
 router.get('/:pdfId', pdfController.getPDF);
-router.post('/uploadPdf', pdfController.uploadPdf);
+router.get('/predict/:pdfId/:page', pdfController.predictZOI);
+
+router.put('/', pdfController.addPDF);
+router.delete('/:id', pdfController.deletePDF);
 
 // router.use(authController.restrictTo('admin', 'lead-guide'));
 
