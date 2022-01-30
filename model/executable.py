@@ -206,5 +206,5 @@ def is_zoi(resultat):
 
 final_pred = is_zoi(y_pred)
 
-print('True')
+print(final_pred)
 sys.stdout.flush()

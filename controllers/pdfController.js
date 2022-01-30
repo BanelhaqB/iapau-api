@@ -6,9 +6,9 @@ const multer = require('multer');
 const pdfs = require('../data/pdfs.json');
 
 exports.getPDF = async (req, res, next) => {
-  console.log(pdfs, req.params.id);
+  console.log(pdfs, req.params.pdfId);
 
-  const pdf = _.find(pdfs, { id: req.params.pdfId * 1 });
+  const pdf = _.find(pdfs, { id: req.params.pdfId });
   console.log(pdf);
 
   res.status(200).json({
