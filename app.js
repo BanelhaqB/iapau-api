@@ -1,8 +1,13 @@
 const express = require('express');
-
-const pdfRouter = require('./routes/pdfRoutes');
+const cors = require('cors');
+const router = require('./routes');
 
 const app = express();
+app.use(express.json({ limit: '10kb' }));
+app.use(express.urlencoded({ extended: true, limit: '10kb' }));
+
+app.use(cors());
+app.options('*', cors());
 
 //Test middleware
 app.use((req, res, next) => {
@@ -11,10 +16,6 @@ app.use((req, res, next) => {
 });
 
 // 3- ROUTES *****************************************************
-app.use('/api/v1/pdf', pdfRouter);
-
-// app.all('*', (req, res, next) => {
-//   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
-// });
+app.use('/api/v1', router);
 
 module.exports = app;
