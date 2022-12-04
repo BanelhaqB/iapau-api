@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+/model/camembert_model.pth
+/model/spacy_ner_lg.pkl
+
