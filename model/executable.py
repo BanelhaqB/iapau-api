@@ -19,15 +19,15 @@ PATH_Spacy = Path("./model/spacy_ner_lg.pkl")
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
-# install("transformers")
-# install("sentencepiece")
-# install("pandas")
-# install("numpy")
-# install("nltk")
-# install("scikit-learn")
-# install("torch")
-# install("spacy")
-# install("pays")
+install("transformers")
+install("sentencepiece")
+install("pandas")
+install("numpy")
+install("nltk")
+install("scikit-learn")
+install("torch")
+install("spacy")
+install("pays")
 
 import transformers
 import sentencepiece
