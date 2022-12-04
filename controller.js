@@ -35,6 +35,26 @@ const tags = [{
 {
     name: 'nationality',
     faker: faker.address.country()
+},  
+{
+    name: 'LOC',
+    faker: faker.address.streetAddress()
+}, 
+{
+    name: 'PER',
+    faker: faker.name.fullName()
+},  
+{
+    name: 'DATE',
+    faker: faker.date.month()
+}, 
+{
+    name: 'METIER',
+    faker: faker.name.jobTitle()
+}, 
+{
+    name: 'MISC',
+    faker: "MISC"
 }, 
 {
     name: 'situation_familiale',

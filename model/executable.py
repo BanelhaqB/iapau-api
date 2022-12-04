@@ -19,15 +19,15 @@ PATH_Spacy = Path("./model/spacy_ner_lg.pkl")
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
-install("transformers")
-install("sentencepiece")
-install("pandas")
-install("numpy")
-install("nltk")
-install("scikit-learn")
-install("torch")
-install("spacy")
-install("pays")
+# install("transformers")
+# install("sentencepiece")
+# install("pandas")
+# install("numpy")
+# install("nltk")
+# install("scikit-learn")
+# install("torch")
+# install("spacy")
+# install("pays")
 
 import transformers
 import sentencepiece
@@ -372,10 +372,10 @@ def return_NER(sentence,modele):
     return [(X.text, X.label_) for X in doc.ents]
 
 #Lecture du modèle 
-with open(PATH_Spacy, 'rb') as file:
-    modele_spacy = pickle.load(file)
+# with open(PATH_Spacy, 'rb') as file:
+#     modele_spacy = pickle.load(file)
 
-output_spacy=return_NER(message, modele_spacy)
+output_spacy=return_NER(message, nlp)
 
 for o in output_spacy:
     final_dict[o[1]]=o[0]
